@@ -15,7 +15,8 @@ node_modules/
 .env.production.local
 
 # editor
-.vscode/
+.vscode/*
+!.vscode/settings.example.json
 .idea/
 *.swp
 *~
