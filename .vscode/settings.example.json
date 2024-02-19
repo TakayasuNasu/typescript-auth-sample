@@ -1,0 +1,24 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#f7f7f9",
+    "titleBar.inactiveForeground": "#f7f7f9",
+    "titleBar.activeBackground": "#251D3A",
+    "titleBar.inactiveBackground": "#707070"
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "svg.preview.background": "editor",
+  "css.lint.unknownAtRules": "warning",
+  "scss.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "recommendations": [
+    "zixuanchen.vitest-explorer",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
