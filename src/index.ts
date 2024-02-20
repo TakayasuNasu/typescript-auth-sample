@@ -1,6 +1,10 @@
 import express from 'express'
+
+import { app as config } from '@/config/app.ts'
+
 const app: express.Express = express()
-const port = 33333
+const port = config.port || 33333
+
 app.get('/', (_, res) => {
   res.send('The World!!! by Dio')
 })
