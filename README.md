@@ -16,5 +16,19 @@ In terms of ESLint version 9, `flat config` becomes the default setting, and `es
 - [typicode/husky: Git hooks made easy 🐶 woof\!](https://github.com/typicode/husky)
 - [【2024/01最新】husky \+ lint\-staged でコミット前にlintを強制する方法](https://zenn.dev/risu729/articles/latest-husky-lint-staged)
 
+> [!NOTE] > `husky` is configured differently in different versions.
+
+## ESModule can't find path alias
+
+- [ESM で実行する ts\-node で paths のエイリアスを解決する](https://kimuson.dev/blog/typescript/ts_node_esm_paths/)
+- [ts\-node や nestjs で絶対パスと ESM を同時に使う](https://zenn.dev/sun_yryr/scraps/83fb774133ae9a)
+
 > [!NOTE]
-> `husky` is configured differently in different versions.
+> should understand what is ESModule.
+> `"type": "module",` in `package.json`
+
+## Test
+
+```bash
+npm test
+```
