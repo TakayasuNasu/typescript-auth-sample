@@ -1,21 +1,18 @@
-import passport from 'passport'
-import { Strategy as LocalStrategy } from 'passport-local'
+import { Strategy as JWTStrategy, ExtractJwt, StrategyOptions } from 'passport-jwt'
 
-passport.use(
-  new LocalStrategy(
-    {
-      usernameField: 'username',
-      passwordField: 'password',
-      session: false,
-    },
-    (username: string, password: string, done: any) => {
-      if (username === 'hoge' && password === 'fuga') {
-        return done(null, username)
-      } else {
-        return done(null, false, {
-          message: 'username or password was incorrect',
-        })
-      }
-    },
-  ),
-)
+import { auth } from '@/config/auth.ts'
+
+export const strategyConfig = {
+  usernameField: 'username',
+  passwordField: 'password',
+  session: false,
+}
+
+const options: StrategyOptions = {
+  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+  secretOrKey: auth.jsonWebTokenSecret,
+}
+
+export const jwtStrategy = new JWTStrategy(options, (jtw_payload: any, done: any) => {
+  done(null, jtw_payload)
+})
