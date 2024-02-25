@@ -1,3 +1,3 @@
 export const auth = {
-  jsonWebTokenSecret: process.env.JWT_SECRET,
+  jsonWebTokenSecret: process.env.JWT_SECRET ?? 'secret',
 }

@@ -27,6 +27,11 @@ module.exports = {
             position: 'before',
           },
           {
+            pattern: 'express',
+            group: 'external',
+            position: 'before',
+          },
+          {
             pattern: '@/**',
             group: 'parent',
             position: 'before',
