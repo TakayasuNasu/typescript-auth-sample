@@ -1,13 +1,23 @@
 import express from 'express'
 
-import { app as config } from '@/config/app.ts'
+import cookieParser from 'cookie-parser'
+
+import { app as config } from '@/config/app'
+import studentRouter from '@/routes/student'
 
 const app: express.Express = express()
-const port = config.port || 33333
+const port = config.port
+
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
 
 app.get('/', (_, res) => {
-  res.send('The World!!! by Dio')
+  res.json('Server running.')
 })
+
+app.use('/student', studentRouter)
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Listening on port ${port}`)
 })
