@@ -1,4 +1,5 @@
 import { Express, Request, Response, NextFunction } from 'express'
+
 import jwt from 'jsonwebtoken'
 
 import { auth } from '@/config/auth.ts'

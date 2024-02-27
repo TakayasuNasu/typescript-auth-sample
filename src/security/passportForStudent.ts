@@ -17,8 +17,10 @@ passport.use(
 
 export function verify(username: string, password: string) {
   if (username === 'hoge' && password === 'fuga') {
+    console.log(`Loged in student ${username}`)
     return true
   } else {
+    console.log(`Unauthorized student: ${username}`)
     return false
   }
 }
