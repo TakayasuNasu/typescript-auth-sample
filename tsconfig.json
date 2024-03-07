@@ -18,10 +18,12 @@
     "target": "esnext",
     "typeRoots": ["node_modules/@types", "./src/types"]
   },
-  "exclude": ["__tests__"],
+  "exclude": ["__tests__", "dist"],
   "include": ["src/**/*.ts", "src/**/*.tsx", ".eslintrc.js", "vitest.config.mts"],
   "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "transpiler": "@cspotcode/fast-ts-compiler",
+    "swc": true
   }
 }
