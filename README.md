@@ -23,10 +23,6 @@ In terms of ESLint version 9, `flat config` becomes the default setting, and `es
 - [ESM で実行する ts\-node で paths のエイリアスを解決する](https://kimuson.dev/blog/typescript/ts_node_esm_paths/)
 - [ts\-node や nestjs で絶対パスと ESM を同時に使う](https://zenn.dev/sun_yryr/scraps/83fb774133ae9a)
 
-> [!NOTE]
-> should understand what is ESModule.
-> `"type": "module",` in `package.json`
-
 ## Test
 
 ```bash
