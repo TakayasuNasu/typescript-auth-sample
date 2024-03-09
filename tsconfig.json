@@ -1,29 +1,15 @@
 {
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "allowJs": false,
-    "baseUrl": "./",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "module": "commonjs",
-    "noEmit": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
-    },
-    "resolveJsonModule": true,
-    "strict": true,
-    "target": "esnext",
-    "typeRoots": ["node_modules/@types", "./src/types"]
+    }
   },
-  "exclude": ["__tests__", "dist"],
-  "include": ["src/**/*.ts", "src/**/*.tsx", ".eslintrc.js", "vitest.config.mts"],
-  "ts-node": {
-    "experimentalSpecifierResolution": "node",
-    "transpileOnly": true,
-    "transpiler": "@cspotcode/fast-ts-compiler",
-    "swc": true
-  }
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "src/__tests__"]
 }
