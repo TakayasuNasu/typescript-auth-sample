@@ -10,6 +10,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "src/__tests__"]
+  "include": ["src/**/*.ts", ".eslintrc.js", "vitest.config.mts"],
+  "exclude": ["node_modules"]
 }
