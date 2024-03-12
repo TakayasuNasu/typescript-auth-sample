@@ -1,6 +1,6 @@
 import { Strategy as JWTStrategy, ExtractJwt, StrategyOptions } from 'passport-jwt'
 
-import { auth } from '@/config/auth.ts'
+import { auth } from '@/config/auth'
 
 export const strategyConfig = {
   usernameField: 'username',
