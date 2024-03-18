@@ -1,3 +1,7 @@
+import * as dotenv from 'dotenv'
+
+dotenv.config()
+
 export const app = {
-  port: process.env.PORT ?? 33333,
+  port: process.env.PORT ?? 44444,
 }
